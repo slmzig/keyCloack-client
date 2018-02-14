@@ -1,4 +1,6 @@
 import java.util
+import org.keycloak.admin.client._
+import org.jboss.resteasy.client.jaxrs._
 
 object Main extends App {
 
@@ -15,6 +17,6 @@ object Main extends App {
         .connectionPoolSize(10).build())
     .build()
 
-  val users: util.List[UserRepresentation] = kc.realm("").users().list()
+  // val users: util.List[UserRepresentation] = kc.realm("").users().list()
 
 }
